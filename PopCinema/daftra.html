@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regist</title>
+ <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        } 
+        h3 {
+            font-size: 16px;
+            color: #777;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 0px;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333;
+            margin-top: 5px;
+        }
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+        .form-check {
+            margin-bottom: 10px;
+        }
+        .ingat {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .form-check-input {
+            width: 16px;
+            height: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:active {
+            background-color: #003d82;
+        }
+        @media (max-width: 500px) {
+            div {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 14px;
+            }
+            input[type="email"],
+            input[type="password"],
+            button {
+                font-size: 14px;
+            }
+        }
+</style>
+</head>
+<body>
+    <div>
+        <form action="/masuk.html">
+            <h1>REGIST</h1>
+            <h3>Silahkan Isikan form pendaftaran</h3>
+            <div class="field">
+                <label for="email">Masukkan Email Anda</label>
+                <input type="email" id="email" placeholder="Email" required>  
+            </div>
+            
+            <div class="field">
+                <label for="password">Masukkan Password Anda</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            
+            <div class="field">
+                <label for="password">Masukkan Konfirmasi Kata Sandi</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            
+            <div class="form-check">
+                <div class="ingat">
+                    <input class="form-check-input" type="checkbox" value="Ingat Saya" id="">
+                    <label>Pembeli Tiket</label>
+                </div>
+            </div>
+            <button>Daftar</button>
+            <br>
+            <p>Sudah punya akun? <a href="/masuk.html">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>
+
